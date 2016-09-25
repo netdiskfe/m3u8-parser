@@ -317,6 +317,9 @@ export default class Parser extends Stream {
           // prepare for the next URI
           currentUri = {};
         },
+        error() {
+          this.hasError = true;
+        },
         comment() {
           // comments are not important for playback
         }
