@@ -82,9 +82,9 @@ export default class ParseStream extends Stream {
    * @param {String} line a single line of an M3U8 file to parse
    */
   push(line) {
+    const url = /^[\w\s+/?%#&=.:\\\-]+$/g;
     let match;
     let event;
-    let url = /^[\w\s+/?%#&=.:\\\-]+$/g;
 
     // strip whitespace
     line = line.replace(/^[\u0000\s]+|[\u0000\s]+$/g, '');
