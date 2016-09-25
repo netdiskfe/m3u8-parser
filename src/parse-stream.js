@@ -84,7 +84,7 @@ export default class ParseStream extends Stream {
   push(line) {
     let match;
     let event;
-    let url = /[\w\s+/?%#&=.:\\\-]+/g;
+    let url = /^[\w\s+/?%#&=.:\\\-]+$/g;
 
     // strip whitespace
     line = line.replace(/^[\u0000\s]+|[\u0000\s]+$/g, '');
