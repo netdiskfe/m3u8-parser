@@ -6,7 +6,7 @@
   "main": "es5/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:videojs/m3u8-parser.git"
+    "url": "git@github.com:netdiskfe/m3u8-parser.git"
   },
   "contributors": [
     {
@@ -20,6 +20,10 @@
     {
       "name": "dmlap",
       "github": "https://github.com/dmlap"
+    },
+    {
+      "name": "Loliner",
+      "github": "https://github.com/Loliner"
     }
   ],
   "scripts": {
