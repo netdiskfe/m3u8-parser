@@ -11,6 +11,7 @@ import Stream from './stream';
  * @extends Stream
  */
 export default class LineStream extends Stream {
+
   constructor() {
     super();
     this.buffer = '';
